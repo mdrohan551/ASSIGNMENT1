@@ -1,0 +1,61 @@
+@mixin after($l, $b, $w, $h, $bg) {
+      content: '';
+      position: absolute;
+      left: $l;
+      bottom: $b;
+      width: $w;
+      height: $h;
+      background: $bg;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform .3s ease-out;
+}
+
+@mixin before($l, $t, $w, $h, $z) {
+      content: '';
+      position: absolute;
+      left: $l;
+      top: $t;
+      width: $w;
+      height: $h;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8687675753895308) 8%, rgba(0, 0, 0, 0.4962185557816877) 56%, rgba(9, 9, 121, 0) 100%);
+      z-index: $z;
+}
+
+@mixin before2($l, $t, $w, $h, $z) {
+      content: '';
+      position: absolute;
+      left: $l;
+      top: $t;
+      width: $w;
+      height: $h;
+      background: #f4f4f48d;
+      z-index: $z;
+}
+
+@mixin footerbefore ($l, $t, $w, $h, $z) {
+      content: '';
+      position: absolute;
+      left: $l;
+      top: $t;
+      width: $w;
+      height: $h;
+      background: #000000ac;
+      z-index: $z;
+}
+
+@mixin button_ainmat($l, $t, $w, $h, $z) {
+      content: '';
+      position: absolute;
+      left: $l;
+      top: $t;
+      width: $w;
+      height: $h;
+      background: #027a54bb;
+      z-index: $z;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform .3s ease-out;
+      border-radius: 30px;
+      
+}
