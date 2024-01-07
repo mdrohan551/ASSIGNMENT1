@@ -895,12 +895,12 @@ body{
 
 @media (min-width: 1200px) {
     #nav .header .main_menu ul li a {
-        font-size: 14px;
+        font-size: 20px;
         padding: 0 0px;
     }
     #banner {
         z-index: 1;
-        padding: 80px 0 80px;
+        padding:300px 0 300px;
     }
     #footer .fot_last .text2 p {
         margin: 0 !important;
