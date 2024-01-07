@@ -109,6 +109,7 @@ function popups() {
    }
    window.addEventListener('click', function (e) {
       if (e.target === popup_success) {
+          
          let popup_success = document.getElementById("popup_success");
       let closePopup = document.getElementById("closePopup");
       popup_success.style.width = '0'
@@ -121,6 +122,10 @@ function popups() {
 }
 function closeCard() {
    if (popup_success.style.width = '100%') {
+       // Audio
+       let tuch = document.getElementById('tuch');
+       // Audio
+       tuch.play()
       let popup_success = document.getElementById("popup_success");
       let closePopup = document.getElementById("closePopup");
       popup_success.style.width = '0';
