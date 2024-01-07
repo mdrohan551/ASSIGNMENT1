@@ -161,7 +161,7 @@ ul {
                     }
 
                     &:after {
-                        @include after(0, 0, 100%, 3px, #f74242)
+                        @include after(0, 0, 100%, 3px, #4ef742)
                     }
 
                     &:last-child {
@@ -577,7 +577,7 @@ ul {
             font-weight: 600;
             font-size: 17px;
             transition: all linear .3s;
-            z-index: 111;
+            z-index:1;
             border-radius: 30px;
 
             &:hover {
@@ -587,12 +587,12 @@ ul {
                 &::after {
                     transform: scaleX(1);
                     transform-origin: bottom left;
-                    z-index: -1;
                     border-radius: 30px;
+                    z-index: -1;
                 }
             }
             &::after {
-                @include button_ainmat(0, 0, 100%, 100%, 1)   
+                @include button_ainmat(0, 0, 100%, 100%, -1)   
             }
         }
     }
@@ -667,7 +667,6 @@ ul {
                     text-align: center;
                     background: transparent;
                     border: 1px solid var(--text);
-
                     &:hover {
                         background: var(--primary);
                         border: var(--text);

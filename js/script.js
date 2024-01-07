@@ -52,6 +52,10 @@ function popups() {
    let success = document.getElementById("success");
    let popup_notsuccess = document.getElementById("popup_notsuccess");
    if (fileInput >= 18) {
+          // Audio
+          let correct = document.getElementById('correct');
+          // Audio
+          correct.play()
       popup_success.style.width = '100%'
       success.style.transform = 'scaleX(1)' + 'translate(-50%,-50%) '
       not_filup.textContent='You are an Adult !'
@@ -62,6 +66,10 @@ function popups() {
    
    
    else if (fileInput === '') {
+      // Audio
+      let wrong = document.getElementById('wrong');
+      // Audio
+      wrong.play();
       // not_filup.classList.toggle('red')
       not_filup.textContent='Please fill in this field'
       not_filup.style.color='red'
@@ -70,6 +78,10 @@ function popups() {
       success.style.transform = 'scaleX(0)' + 'translate(-50%,-50%) '
    } 
    else if (fileInput != '') {
+       // Audio
+       let looser = document.getElementById('looser');
+       // Audio
+       looser.play();
       popup.style.background='#2bb3f2'
       not_filup.textContent='Make sure you are 18+ or younger'
       not_filup.style.color='black'
@@ -79,6 +91,10 @@ function popups() {
    } 
    
    else if (fileInput <= 17) {
+          // Audio
+          let looser = document.getElementById('looser');
+          // Audio
+          looser.play()
       popup_success.style.width = '100%'
       popup_notsuccess.style.transform = 'scaleX(1)' + 'translate(-50%,-50%) '
    }   
@@ -156,4 +172,9 @@ ScrollReveal().reveal('.footer_social_icon',{
    origin: 'bottom' 
 });
 
-
+// dynamic audio 
+// window.addEventListener('click', () =>{
+//  let song = document.getElementById('song');
+//  song.play();
+// })
+// dynamic audio 
